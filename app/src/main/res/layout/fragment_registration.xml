@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#ECEBEB"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:src="@drawable/vanminh_water"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_below="@+id/image"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF">
+
+                <LinearLayout
+                    android:padding="@dimen/_10sdp"
+                    android:layout_below="@+id/TextLogin"
+                    android:id="@+id/layout_login"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="#2CA7E0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Username"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:drawableRight="@drawable/ic_person"
+                        android:id="@+id/userName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textPassword" />
+                    <TextView
+                        android:textColor="#2CA7E0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Password"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:drawableRight="@drawable/ic_lock_black_24dp"
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textPassword" />
+                    <TextView
+                        android:textColor="#2CA7E0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Confirm"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:drawableRight="@drawable/confirmation"
+                        android:id="@+id/Confirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textPassword" />
+                    <TextView
+                        android:textColor="#2CA7E0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Name"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:drawableRight="@drawable/name"
+                        android:id="@+id/Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textPassword" />
+                    <TextView
+                    android:textColor="#2CA7E0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                    android:text="PhoneNumber"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                    <EditText
+                        android:drawableRight="@drawable/telephone"
+                        android:id="@+id/PhoneNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textPassword" />
+                    <TextView
+                        android:textColor="#2CA7E0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Address"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:drawableRight="@drawable/home"
+                        android:id="@+id/Address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textPassword" />
+                    <Button
+                        android:id="@+id/singup"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_below="@+id/password"
+                        android:layout_marginLeft="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_40sdp"
+                        android:background="#283AB3"
+                        android:text="Đăng Ký"
+                        android:textColor="#FFFFFF" />
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:textColor="#000000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bạn Chưa Có Tài Khoản ? "/>
+                        <TextView
+                            android:id="@+id/login_Registraion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Đăng Nhập Ngay."
+                            android:textColor="#303F9F"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.cart.CartFragment">
+    <RelativeLayout
+        android:background="#FFFFFF"
+        android:id="@+id/all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+   <ImageView
+       android:src="@drawable/ic_arrow_back_black_24dp"
+       android:layout_margin="@dimen/_3sdp"
+       android:id="@+id/image_back"
+       android:layout_width="@dimen/_30sdp"
+       android:layout_height="@dimen/_20sdp"/>
+
+
+        <RelativeLayout
+            android:id="@+id/layout_thongBao"
+            android:layout_marginBottom="@dimen/_280sdp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/image_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="#039887"
+                android:textSize="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_thongBao"
+                android:layout_centerInParent="true">
+            </TextView>
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_below="@+id/image_back"
+            android:id="@+id/RC_list_sp_car"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_370sdp"/>
+        <RelativeLayout
+
+            android:id="@+id/layout_mid"
+            android:layout_below="@+id/RC_list_sp_car"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/_12sdp"
+                android:gravity="center"
+                android:textColor="#00796B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tổng Tiền:"/>
+
+            <TextView
+                android:textSize="@dimen/_12sdp"
+                android:gravity="center"
+                android:textColor="#FF0303"
+                android:id="@+id/sum_price_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <Button
+
+            android:textColor="#1632E4"
+            android:layout_below="@id/layout_mid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thanh Toán"
+
+            android:id="@+id/bt_Refund"/>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

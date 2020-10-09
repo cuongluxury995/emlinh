@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.waterpurifier">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".ui.home.App"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_vanminh"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity_regisstration"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".heremap.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>-->
+        <activity android:name=".heremap.ResultListActivity" />
+
+        <!--Developers should put application credentials here.To obtain them, please register the application
+         at https://developer.here.com/develop/mobile-sdks-->
+        <meta-data
+            android:name="com.here.android.maps.appid"
+            android:value="tNDVBGxezrlfBUngAJ4V" />
+        <meta-data
+            android:name="com.here.android.maps.apptoken"
+            android:value="Vfzo6UPOOQ-ad6CwDgIdKg" />
+        <meta-data
+            android:name="com.here.android.maps.license.key"
+            android:value="UIKx+oQ0hCPkLF209rdskzBnPBHEXBzEaGLHNT/aQvfQQ3oqV0NKSfi+Lf0pUnW55xr6tQpX//sa8/BlRcPRBli/exB2xKMYRPGSfFTaztDpQZwnzmGjYf4PZw26YCgMwp4L46d6EzEoXRLOF+nuawpqnMdPg4tSRCtBtQ789Pv+K6HwWm4w9xi5TXQ2stgnhuTOT//Vyfwi9MlgvawHp9K0LIyiyz23zyz+eVDVusJcsE46Azcu7+tb6mppfu2EXs5w8T3DrrpmNoF3Of1EVoCyL+Cg4dNsbISw5Ol1mKPJ0spL5rfpNzAzTjnpCZliCU2rdLae9816XL5WQ4sK2fnYPVK2VmqB9ykMRrwL3gHQpgwto77ZdS9GKou73XOv3FMfz/6nL1IoEPNbvKCqlaxfqt7TUA9+Q6tkZEc15HoSvd6go19wZuZb+Zve9u6FitQOy9MM+D7ABqKJ3YkA1F0VwTePvpjqMVKFXRTGe9tMgpRls2vjZuYO5QAMYo3HsiEDciT7Rm+KXk7XfQ4F4jFNm9mpI0gnbevanIfpuW1ov+ccfZ+pszU5LsAtDSKBuyTtfSgebYIUJJSv0XaYLXmac5KPpQ6xDR0gq/CdDcu7ArQEyzV/L8Rf3WCF7WoF2KvyxDlnTAMJtkKHjwNC4TjSBQBMbssuSLNK5eTVB6w=" />
+    </application>
+
+
+</manifest>

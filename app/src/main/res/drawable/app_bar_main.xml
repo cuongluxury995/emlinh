@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#2738A6"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_shopping_cart_black_24dp"/>
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:orientation="horizontal"
+            android:background="@drawable/botron">
+            <ImageView
+                android:src="@drawable/android_search"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_weight="2"
+                android:paddingTop="10dp"
+                android:layout_marginTop="-5dp"
+                android:tint="#777777"/>
+
+            <EditText
+                android:id="@+id/searchView"
+                android:layout_width="199dp"
+                android:layout_height="30dp"
+                android:layout_weight="6"
+                android:background="@null"
+                android:hint="Tìm kiếm sản phẩm"
+                android:paddingLeft="0dp"
+                android:paddingTop="0dp"
+                android:textColor="#00796B" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="130dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:layout_marginLeft="100dp"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_timkiem">
+            <TextView
+                android:textSize="17dp"
+                android:text="Tìm kiếm sản phẩm"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="6"
+                android:paddingLeft="8dp"
+                android:textColor="#FFFFFF"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="100dp"
+            android:background="@drawable/edit_timkiem2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0.5dp">
+
+            <TextView
+                android:textSize="17dp"
+                android:gravity="center"
+                android:text="Tìm kiếm"
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:paddingTop="0dp"
+                android:paddingLeft="10dp"
+                android:background="@null"
+                android:textColor="#FFFFFF"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        layout="@layout/content_main" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

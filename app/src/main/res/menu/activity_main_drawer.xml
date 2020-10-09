@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@drawable/home_page"
+            android:id="@+id/nav_home"
+            android:title="@string/menu_trangChu" />
+        <item
+            android:id="@+id/nav_recruitment"
+           android:icon="@drawable/shopping_cart"
+            android:title="@string/menu_gioHang" />
+        <item
+            android:id="@+id/nav_product"
+           android:icon="@drawable/product"
+            android:title="@string/menu_sanPham" />
+        <item
+            android:id="@+id/nav_introduce"
+              android:icon="@drawable/marker"
+            android:title="Cửa Hàng" />
+<!--        <item-->
+<!--            android:id="@+id/nav_project"-->
+<!--           android:icon="@drawable/product"-->
+<!--            android:title="@string/menu_duAn" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_news"-->
+<!--            android:icon="@drawable/communication"-->
+<!--            android:title="@string/menu_tinTuc" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_promotion"-->
+<!--            android:icon="@drawable/megaphone"-->
+<!--            android:title="@string/menu_khuyenMai" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_contact"-->
+<!--             android:icon="@drawable/phone"-->
+<!--            android:title="@string/menu_lienHe" />-->
+
+<!--        <item-->
+<!--            android:id="@+id/nav_pay"-->
+<!--           android:icon="@drawable/pay"-->
+<!--            android:title="@string/menu_PTthanhToan" />-->
+
+    </group>
+</menu>

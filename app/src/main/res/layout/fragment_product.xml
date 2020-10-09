@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:background="#ffffff"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.product.ProductFragment">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/botron"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginTop="@dimen/_1sdp"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_weight="2"
+            android:backgroundTint="#67049C"
+            android:src="@drawable/android_search"
+            app:tint="#777777" />
+        <EditText
+            android:id="@+id/searchView"
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_weight="6"
+            android:background="#fff"
+            android:hint="Tìm Kiếm Sản Phẩm..."
+            android:textSize="@dimen/_10sdp"
+            android:paddingLeft="0dp"
+            android:paddingTop="0dp"
+            android:textColor="#00796B"
+            android:textColorHint="#0534DF" >
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="#3466aa"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:text="Danh Sách Sản Phẩm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="@dimen/_10sdp"
+        android:id="@+id/RC_product_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+    </ScrollView>
+</layout>

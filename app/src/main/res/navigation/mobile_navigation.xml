@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.waterpurifier.ui.home.HomeFragment"
+        android:label="@string/menu_trangChu"
+        tools:layout="@layout/fragment_home">
+
+        <!--        <action-->
+        <!--            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"-->
+        <!--            app:destination="@id/nav_home_second" />-->
+    </fragment>
+    <!--    <fragment-->
+    <!--        android:id="@+id/nav_home_second"-->
+    <!--        android:name="com.example.btl_android_d40.ui.home.HomeSecondFragment"-->
+    <!--        android:label="@string/home_second"-->
+    <!--        tools:layout="@layout/fragment_home_second">-->
+    <!--        <action-->
+    <!--            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"-->
+    <!--            app:destination="@id/nav_home" />-->
+
+    <!--        <argument-->
+    <!--            android:name="myArg"-->
+    <!--            app:argType="string" />-->
+    <!--    </fragment>-->
+
+    <fragment
+        android:id="@+id/nav_product"
+        android:name="com.example.waterpurifier.ui.product.ProductFragment"
+        android:label="@string/menu_sanPham"
+        tools:layout="@layout/fragment_product" />
+
+    <activity
+        android:id="@+id/nav_introduce"
+        android:name="com.example.waterpurifier.heremap.MainActivity"
+        android:label="@string/menu_gioiThieu"
+        tools:layout="@layout/activity_main1" />
+<!--    <fragment-->
+<!--        android:id="@+id/nav_contact"-->
+<!--        android:name="com.example.waterpurifier.ui.contact.ContactFragment"-->
+<!--        android:label="@string/menu_lienHe"-->
+<!--        tools:layout="@layout/fragemnt_contact" />-->
+<!--    <fragment-->
+<!--        android:id="@+id/nav_news"-->
+<!--        android:name="com.example.waterpurifier.ui.news.NewsFragment"-->
+<!--        android:label="@string/menu_tinTuc"-->
+<!--        tools:layout="@layout/fragment_news" />-->
+<!--    <fragment-->
+<!--        android:id="@+id/nav_project"-->
+<!--        android:name="com.example.waterpurifier.ui.projects.ProjectFragment"-->
+<!--        android:label="@string/menu_duAn"-->
+<!--        tools:layout="@layout/fragment_project" />-->
+<!--    <fragment-->
+<!--        android:id="@+id/nav_promotion"-->
+<!--        android:name="com.example.waterpurifier.ui.promotion.PromotionFragment"-->
+<!--        android:label="@string/menu_khuyenMai"-->
+<!--        tools:layout="@layout/fragment_promotion" />-->
+    <fragment
+        android:id="@+id/nav_recruitment"
+        android:name="com.example.waterpurifier.ui.cart.CartFragment"
+        android:label="@string/menu_khuyenMai"
+        tools:layout="@layout/fragment_car" />
+<!--    <fragment-->
+<!--        android:id="@+id/nav_pay"-->
+<!--        android:name="com.example.waterpurifier.ui.payment.PaymentFragment"-->
+<!--        android:label="@string/menu_PTthanhToan"-->
+<!--        tools:layout="@layout/fragemnt_payment" />-->
+</navigation>
